@@ -28,7 +28,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"580a1f4451c35f5357e81114aff5b625">
+		["MD5-CAM-1.0.1"] = <"fbb1d7ba949d853c73d46d38def552f9">
 		["build_uid"] = <"8f788184-b62d-3331-95b9-cfdbfeb607df">
 	>
 
@@ -153,6 +153,11 @@ definition
 								include
 									archetype_id/value matches {/.*/}
 							}
+						}
+					}
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- nger_logo
+						value matches {
+							DV_CODED_TEXT matches {*}
 						}
 					}
 				}
@@ -291,6 +296,10 @@ ontology
 				["at0031"] = <
 					text = <"Enke">
 					description = <"Individet er enke.">
+				>
+				["at0032"] = <
+					text = <"nger_logo">
+					description = <"">
 				>
 			>
 		>
