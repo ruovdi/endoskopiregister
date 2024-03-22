@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "28.0.0",
+      "sem_ver" : "29.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "66e3a02452718d0c7473abb9990c86ba",
+      "MD5-CAM-1.0.1" : "efda019ea0f846f3ba83df9dab4da3b5",
       "PARENT:MD5-CAM-1.0.1" : "A63812FE7AE52B5F433DF53EFD8972C9"
     },
     "details" : {
@@ -336,14 +336,25 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
+                    "rmAttributeName" : "defining_code",
                     "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Graviditeter og fødsler angitt av individet i endoskopiregisterskjemaet." ]
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "nger_hn"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "nger_hn" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "nger_hn",
+                        "code" : "nger_gravid_hn",
+                        "value" : "Graviditeter og fødsler angitt i endoskopiregisterskjemaet."
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -988,13 +999,13 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "local_termsA"
+                                "value" : "nger_hn"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_termsA" ],
+                              "selectedTerminologies" : [ "nger_hn" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_termsA",
-                                "code" : "nger_hn",
+                                "terminologyId" : "nger_hn",
+                                "code" : "nger_prosedyrer_hn",
                                 "value" : "Norsk gynekologisk endoskopiregister"
                               } ]
                             } ]
