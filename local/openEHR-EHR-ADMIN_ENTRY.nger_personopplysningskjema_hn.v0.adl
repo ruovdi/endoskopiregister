@@ -28,7 +28,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fbb1d7ba949d853c73d46d38def552f9">
+		["MD5-CAM-1.0.1"] = <"82aa68b9f77bb3a2ff81431b67963736">
 		["build_uid"] = <"8f788184-b62d-3331-95b9-cfdbfeb607df">
 	>
 
@@ -130,7 +130,8 @@ definition
 											at0028,    -- Samboer
 											at0029,    -- Gift
 											at0030,    -- Skilt
-											at0031]    -- Enke
+											at0031,    -- Enke
+											at0033]    -- Ukjent
 										}
 									}
 								}
@@ -144,7 +145,8 @@ definition
 											at0022,    -- Videregående, studieforberedende program
 											at0023,    -- Videregående, yrkesfaglig program
 											at0024,    -- Høgskole eller universitet, mindre enn 4 år
-											at0025]    -- Høgskole eller universitet, 4 år eller mer
+											at0025,    -- Høgskole eller universitet, 4 år eller mer
+											at0034]    -- Ukjent
 										}
 									}
 								}
@@ -300,6 +302,14 @@ ontology
 				["at0032"] = <
 					text = <"nger_logo">
 					description = <"">
+				>
+				["at0033"] = <
+					text = <"Ukjent">
+					description = <"Sivilstatus er ukjent.">
+				>
+				["at0034"] = <
+					text = <"Ukjent">
+					description = <"Høyeste utdanningsnivå er ukjent.">
 				>
 			>
 		>
